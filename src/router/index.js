@@ -37,18 +37,18 @@ export const constantRouterMap = [
     component: Layout,
     redirect: '/pms/product',
     name: 'pms',
-    meta: {title: '商品', icon: 'product'},
+    meta: {title: '菜品', icon: 'product'},
     children: [{
       path: 'product',
       name: 'product',
       component: () => import('@/views/pms/product/index'),
-      meta: {title: '商品列表', icon: 'product-list'}
+      meta: {title: '菜品列表', icon: 'product-list'}
     },
       {
         path: 'addProduct',
         name: 'addProduct',
         component: () => import('@/views/pms/product/add'),
-        meta: {title: '添加商品', icon: 'product-add'}
+        meta: {title: '添加菜品', icon: 'product-add'}
       },
       {
         path: 'updateProduct',
@@ -61,61 +61,61 @@ export const constantRouterMap = [
         path: 'productRecycle',
         name: 'productRecycle',
         component: () => import('@/views/pms/product/index'),
-        meta: {title: '商品回收站', icon: 'product-recycle'},
+        meta: {title: '菜品回收站', icon: 'product-recycle'},
         hidden: true
       },
       {
         path: 'productComment',
         name: 'productComment',
         component: () => import('@/views/pms/product/index'),
-        meta: {title: '商品评价', icon: 'product-comment'},
+        meta: {title: '菜品评价', icon: 'product-comment'},
         hidden: true
       },
       {
         path: 'productCate',
         name: 'productCate',
         component: () => import('@/views/pms/productCate/index'),
-        meta: {title: '商品分类', icon: 'product-cate'}
+        meta: {title: '菜品分类', icon: 'product-cate'}
       },
       {
         path: 'addProductCate',
         name: 'addProductCate',
         component: () => import('@/views/pms/productCate/add'),
-        meta: {title: '添加商品分类'},
+        meta: {title: '添加菜品分类'},
         hidden: true
       },
       {
         path: 'updateProductCate',
         name: 'updateProductCate',
         component: () => import('@/views/pms/productCate/update'),
-        meta: {title: '修改商品分类'},
+        meta: {title: '修改菜品分类'},
         hidden: true
       },
       {
         path: 'productAttr',
         name: 'productAttr',
         component: () => import('@/views/pms/productAttr/index'),
-        meta: {title: '商品类型', icon: 'product-attr'}
+        meta: {title: '菜品类型', icon: 'product-attr'}
       },
       {
         path: 'productAttrList',
         name: 'productAttrList',
         component: () => import('@/views/pms/productAttr/productAttrList'),
-        meta: {title: '商品属性列表'},
+        meta: {title: '菜品属性列表'},
         hidden: true
       },
       {
         path: 'addProductAttr',
         name: 'addProductAttr',
         component: () => import('@/views/pms/productAttr/addProductAttr'),
-        meta: {title: '添加商品属性'},
+        meta: {title: '添加菜品属性'},
         hidden: true
       },
       {
         path: 'updateProductAttr',
         name: 'updateProductAttr',
         component: () => import('@/views/pms/productAttr/updateProductAttr'),
-        meta: {title: '修改商品属性'},
+        meta: {title: '修改菜品属性'},
         hidden: true
       },
       {
